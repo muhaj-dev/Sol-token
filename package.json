@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^3.1.2",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.87.6",
+    "latest-version": "^7.0.0"
+  }
+}
