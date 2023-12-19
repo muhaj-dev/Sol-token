@@ -16,9 +16,13 @@ const INITIALIZE = false;
 async function main() {
     console.log("Let's name some tokens");
 
-    const myKeypair = loadWalletKey("BEDM9mz8Rne3yP3UDpqjixmxUhMLRJWzh5S2YYnixTTX.json")
+   
+    const myKeypair = loadWalletKey("fuamk25XMM4PcXPqVQbgug2vk395oReGvab1awbMBoy.json")
+    // const myKeypair = loadWalletKey("BEDM9mz8Rne3yP3UDpqjixmxUhMLRJWzh5S2YYnixTTX.json")
     console.log(myKeypair.publicKey.toBase58())
-    const mint = new web3.PublicKey("XYZxvq4uFxyhi9La3Ba63fpmkbkeCYaWVyN2vzVDSRc")
+   
+    const mint = new web3.PublicKey("muhbx511HwkqCREqicGJ7W58j88HZQZZkzEVCMjTTw4")
+    // const mint = new web3.PublicKey("XYZxvq4uFxyhi9La3Ba63fpmkbkeCYaWVyN2vzVDSRc")
 
 
     const seed1 = Buffer.from(anchor.utils.bytes.utf8.encode("metadata"));
@@ -37,16 +41,26 @@ async function main() {
     }
 
 
-    const dataV2 = {
-        name: "Gizmooooo Coin",
-        symbol: "$GIZMOOOOO",
-        uri: "https://5ccwmdhforuyru3bwywsd2ilylllfwizxryzdjcvlyteshacee.arweave.net/6IVmDOV0aYjTYbYtIekLwtay2Rm8cZ-GkVV4mSRwCIY",
+    // const dataV2 = {
+    //     name: "Gizmooooo Coin",
+    //     symbol: "$GIZMOOOOO",
+    //     uri: "https://5ccwmdhforuyru3bwywsd2ilylllfwizxryzdjcvlyteshacee.arweave.net/6IVmDOV0aYjTYbYtIekLwtay2Rm8cZ-GkVV4mSRwCIY",
+    //     // we don't need that
+    //     sellerFeeBasisPoints: 0,
+    //     creators: null,
+    //     collection: null,
+    //     uses: null,
+
+    // }
+     const dataV2 = {
+        name: "Fudox",
+        symbol: "Fud",
+        uri: "https://harlequin-lazy-owl-879.mypinata.cloud/ipfs/QmUDG7AQArjccapo3LnqwqDv4wWZFQXhXLbHtXmZToEtix",
         // we don't need that
         sellerFeeBasisPoints: 0,
         creators: null,
         collection: null,
-        uses: null,
-
+        uses: null
     }
 
 
